@@ -1,16 +1,16 @@
 // ==UserScript==
 // @name         Redirect Instagram Posts to Bibliogram
-// @version      1
+// @version      2
 // @encoding     utf-8
 // @match        *://*.instagram.com/accounts/login/?next=/p/*
-// @author       godly-devotion
+// @author       itsjoshpark
 // @compatible   chrome
 // @compatible   firefox
 // @compatible   opera
 // @compatible   safari
 // @compatible   edge
-// @downloadURL  https://github.com/godly-devotion/userscripts/raw/main/src/Redirect%20Instagram%20Posts%20to%20Bibliogram.user.js
-// @updateURL    https://github.com/godly-devotion/userscripts/raw/main/src/Redirect%20Instagram%20Posts%20to%20Bibliogram.user.js
+// @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Instagram%20Posts%20to%20Bibliogram.user.js
+// @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Instagram%20Posts%20to%20Bibliogram.user.js
 // @run-at       document-start
 // ==/UserScript==
 

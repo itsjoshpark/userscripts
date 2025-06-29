@@ -1,21 +1,26 @@
 /* ==UserStyle==
 @name        YouTube: Hide Elements
-@version     4
+@version     5
 @encoding    utf-8
 @match       *://*.youtube.com/*
-@author      godly-devotion
+@author      itsjoshpark
 @compatible  safari
-@downloadURL https://github.com/godly-devotion/userscripts/raw/main/src/YouTube%3A%20Hide%20Elements.css
-@updateURL   https://github.com/godly-devotion/userscripts/raw/main/src/YouTube%3A%20Hide%20Elements.css
+@downloadURL https://github.com/itsjoshpark/userscripts/raw/main/src/YouTube%3A%20Hide%20Elements.css
+@updateURL   https://github.com/itsjoshpark/userscripts/raw/main/src/YouTube%3A%20Hide%20Elements.css
 ==/UserStyle== */
 
 /* Header items */
 
-ytd-masthead ytd-logo svg.external-icon>svg>g:first-child>path:first-child {
+ytd-masthead
+  ytd-logo
+  svg.external-icon
+  > svg
+  > g:first-child
+  > path:first-child {
   fill: rgba(255, 255, 255, 0.2) !important;
 }
 
-ytd-masthead ytd-logo svg.external-icon>svg>g:last-child {
+ytd-masthead ytd-logo svg.external-icon > svg > g:last-child {
   display: none !important;
 }
 
@@ -28,13 +33,25 @@ ytd-icon-badge-topbar-button-renderer {
 
 /* Sidebar section */
 
-tp-yt-app-drawer ytd-guide-renderer #sections ytd-guide-section-renderer:nth-child(2) {
+tp-yt-app-drawer
+  ytd-guide-renderer
+  #sections
+  ytd-guide-section-renderer:nth-child(2) {
   border: none !important;
 }
 
-tp-yt-app-drawer ytd-guide-renderer #sections ytd-guide-section-renderer:nth-child(3),
-tp-yt-app-drawer ytd-guide-renderer #sections ytd-guide-section-renderer:nth-child(4),
-tp-yt-app-drawer ytd-guide-renderer #sections ytd-guide-section-renderer:nth-child(5),
+tp-yt-app-drawer
+  ytd-guide-renderer
+  #sections
+  ytd-guide-section-renderer:nth-child(3),
+tp-yt-app-drawer
+  ytd-guide-renderer
+  #sections
+  ytd-guide-section-renderer:nth-child(4),
+tp-yt-app-drawer
+  ytd-guide-renderer
+  #sections
+  ytd-guide-section-renderer:nth-child(5),
 tp-yt-app-drawer ytd-guide-renderer #footer {
   display: none !important;
 }
@@ -66,8 +83,8 @@ ytd-watch-metadata #above-the-fold #top-row {
 
 /* Comments section */
 
-ytd-comments ytd-item-section-renderer.ytd-comments>#header,
-ytd-comments ytd-item-section-renderer.ytd-comments>#spinner-container,
+ytd-comments ytd-item-section-renderer.ytd-comments > #header,
+ytd-comments ytd-item-section-renderer.ytd-comments > #spinner-container,
 ytd-comments ytd-comment-action-buttons-renderer #reply-button-end {
   display: none !important;
 }
@@ -75,12 +92,14 @@ ytd-comments ytd-comment-action-buttons-renderer #reply-button-end {
 /* Related items section */
 
 ytd-watch-next-secondary-results-renderer yt-related-chip-cloud-renderer {
-  display: none ! important;
+  display: none !important;
 }
 
 /* Video context menu */
 
 ytd-popup-container ytd-menu-service-item-download-renderer,
-ytd-popup-container tp-yt-paper-listbox>ytd-menu-service-item-renderer:last-child {
+ytd-popup-container
+  tp-yt-paper-listbox
+  > ytd-menu-service-item-renderer:last-child {
   display: none !important;
 }

@@ -1,18 +1,18 @@
 // ==UserScript==
 // @name         Redirect X to Nitter
-// @version      3
+// @version      4
 // @encoding     utf-8
 // @match        *://x.com
 // @match        *://*.x.com/*
 // @match        *://xcancel.com/*
-// @author       godly-devotion
+// @author       itsjoshpark
 // @compatible   chrome
 // @compatible   firefox
 // @compatible   opera
 // @compatible   safari
 // @compatible   edge
-// @downloadURL  https://github.com/godly-devotion/userscripts/raw/main/src/Redirect%20X%20to%20Nitter.user.js
-// @updateURL    https://github.com/godly-devotion/userscripts/raw/main/src/Redirect%20X%20to%20Nitter.user.js
+// @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20X%20to%20Nitter.user.js
+// @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20X%20to%20Nitter.user.js
 // @run-at       document-start
 // ==/UserScript==
 
@@ -28,7 +28,11 @@ function main() {
   }
 
   if (window.location.hostname === domain) {
-    if (document.cookie.split("; ").findIndex((row) => row.startsWith("replaceReddit=")) != -1) {
+    if (
+      document.cookie
+        .split("; ")
+        .findIndex((row) => row.startsWith("replaceReddit=")) != -1
+    ) {
       return;
     }
     document.cookie = "replaceReddit=libreddit.freedit.eu; path=/; Secure";

@@ -1,17 +1,17 @@
 // ==UserScript==
 // @name         Restore Namuwiki Settings
-// @version      3
+// @version      4
 // @encoding     utf-8
 // @match        *://namu.wiki/*
 // @match        *://en.namu.wiki/*
-// @author       godly-devotion
+// @author       itsjoshpark
 // @compatible   chrome
 // @compatible   firefox
 // @compatible   opera
 // @compatible   safari
 // @compatible   edge
-// @downloadURL  https://github.com/godly-devotion/userscripts/raw/main/src/Restore%20Namuwiki%20Settings.user.js
-// @updateURL    https://github.com/godly-devotion/userscripts/raw/main/src/Restore%20Namuwiki%20Settings.user.js
+// @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Restore%20Namuwiki%20Settings.user.js
+// @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Restore%20Namuwiki%20Settings.user.js
 // @run-at       document-start
 // ==/UserScript==
 

@@ -1,16 +1,16 @@
 // ==UserScript==
 // @name         Bypass Google Redirect Notice
-// @version      4
+// @version      5
 // @encoding     utf-8
 // @match        *://*.google.com/url*
-// @author       godly-devotion
+// @author       itsjoshpark
 // @compatible   chrome
 // @compatible   firefox
 // @compatible   opera
 // @compatible   safari
 // @compatible   edge
-// @downloadURL  https://github.com/godly-devotion/userscripts/raw/main/src/Bypass%20Google%20Redirect%20Notice.user.js
-// @updateURL    https://github.com/godly-devotion/userscripts/raw/main/src/Bypass%20Google%20Redirect%20Notice.user.js
+// @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Bypass%20Google%20Redirect%20Notice.user.js
+// @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Bypass%20Google%20Redirect%20Notice.user.js
 // @run-at       document-start
 // ==/UserScript==
 

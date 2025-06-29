@@ -1,30 +1,32 @@
 // ==UserScript==
 // @name         Redirect Reddit to Libreddit
-// @version      7
+// @version      8
 // @encoding     utf-8
 // @match        *://*.reddit.com/*
 // @match        *://libreddit.freedit.eu/*
-// @author       godly-devotion
+// @author       itsjoshpark
 // @compatible   chrome
 // @compatible   firefox
 // @compatible   opera
 // @compatible   safari
 // @compatible   edge
-// @downloadURL  https://github.com/godly-devotion/userscripts/raw/main/src/Redirect%20Reddit%20to%20Libreddit.user.js
-// @updateURL    https://github.com/godly-devotion/userscripts/raw/main/src/Redirect%20Reddit%20to%20Libreddit.user.js
+// @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit%20to%20Libreddit.user.js
+// @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit%20to%20Libreddit.user.js
 // @run-at       document-start
 // ==/UserScript==
 
 function main() {
+  const domain = "libreddit.freedit.eu";
+
   if (window.location.hostname === "www.reddit.com") {
     const pathname = window.location.pathname;
     if (pathname) {
-      window.location.replace("https://libreddit.freedit.eu" + pathname);
+      window.location.replace(`https://${domain}${pathname}`);
     }
     return;
   }
 
-  if (window.location.hostname === "libreddit.freedit.eu") {
+  if (window.location.hostname === domain) {
     if (document.cookie) {
       return;
     }

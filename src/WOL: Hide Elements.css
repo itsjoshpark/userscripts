@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name        WOL: Hide Elements
-@version     7
+@version     8
 @encoding    utf-8
 @match       *://wol.jw.org/*
-@author      godly-devotion
+@author      itsjoshpark
 @compatible  safari
-@downloadURL https://github.com/godly-devotion/userscripts/raw/main/src/WOL%3A%20Hide%20Elements.css
-@updateURL   https://github.com/godly-devotion/userscripts/raw/main/src/WOL%3A%20Hide%20Elements.css
+@downloadURL https://github.com/itsjoshpark/userscripts/raw/main/src/WOL%3A%20Hide%20Elements.css
+@updateURL   https://github.com/itsjoshpark/userscripts/raw/main/src/WOL%3A%20Hide%20Elements.css
 ==/UserStyle== */
 
 /* Hide audio player */
@@ -19,7 +19,7 @@
 
 .fn,
 .jwac .fn,
-.v>.b {
+.v > .b {
   display: none !important;
 }
 
