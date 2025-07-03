@@ -1,22 +1,22 @@
 // ==UserScript==
-// @name         Redirect Reddit to Libreddit
+// @name         Redirect Reddit to Redlib
 // @version      8
 // @encoding     utf-8
 // @match        *://*.reddit.com/*
-// @match        *://libreddit.freedit.eu/*
+// @match        *://pirate.vodka/*
 // @author       itsjoshpark
 // @compatible   chrome
 // @compatible   firefox
 // @compatible   opera
 // @compatible   safari
 // @compatible   edge
-// @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit%20to%20Libreddit.user.js
-// @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit%20to%20Libreddit.user.js
+// @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit%20to%20Redlib.user.js
+// @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit%20to%20Redlib.user.js
 // @run-at       document-start
 // ==/UserScript==
 
 function main() {
-  const domain = "libreddit.freedit.eu";
+  const domain = "pirate.vodka";
 
   if (window.location.hostname === "www.reddit.com") {
     const pathname = window.location.pathname;
