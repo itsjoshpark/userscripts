@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Redirect Reddit to Redlib
-// @version      9
+// @version      10
 // @encoding     utf-8
 // @match        *://*.reddit.com/*
-// @match        *://redlib.freedit.eu/*
+// @match        *://redlib.catsarch.com/*
 // @author       itsjoshpark
 // @compatible   chrome
 // @compatible   firefox
@@ -16,7 +16,7 @@
 // ==/UserScript==
 
 function main() {
-  const domain = "redlib.freedit.eu";
+  const domain = "redlib.catsarch.com";
 
   if (window.location.hostname === "www.reddit.com") {
     const pathname = window.location.pathname;
