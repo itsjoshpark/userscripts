@@ -1,12 +1,10 @@
 /* ==UserStyle==
-@name        YouTube: Hide Elements
+@name        YouTube
 @version     5
-@encoding    utf-8
 @match       *://*.youtube.com/*
 @author      itsjoshpark
-@compatible  safari
-@downloadURL https://github.com/itsjoshpark/userscripts/raw/main/src/YouTube%3A%20Hide%20Elements.css
-@updateURL   https://github.com/itsjoshpark/userscripts/raw/main/src/YouTube%3A%20Hide%20Elements.css
+@downloadURL https://github.com/itsjoshpark/userscripts/raw/main/src/YouTube.css
+@updateURL   https://github.com/itsjoshpark/userscripts/raw/main/src/YouTube.css
 ==/UserStyle== */
 
 /* Header items */

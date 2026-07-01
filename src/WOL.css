@@ -1,12 +1,10 @@
 /* ==UserStyle==
-@name        WOL: Hide Elements
+@name        WOL
 @version     8
-@encoding    utf-8
 @match       *://wol.jw.org/*
 @author      itsjoshpark
-@compatible  safari
-@downloadURL https://github.com/itsjoshpark/userscripts/raw/main/src/WOL%3A%20Hide%20Elements.css
-@updateURL   https://github.com/itsjoshpark/userscripts/raw/main/src/WOL%3A%20Hide%20Elements.css
+@downloadURL https://github.com/itsjoshpark/userscripts/raw/main/src/WOL.css
+@updateURL   https://github.com/itsjoshpark/userscripts/raw/main/src/WOL.css
 ==/UserStyle== */
 
 /* Hide audio player */

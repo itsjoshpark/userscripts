@@ -1,0 +1,41 @@
+/* ==UserStyle==
+@name        Picnob
+@version     1
+@match       *://www.picnob.com/*
+@author      itsjoshpark
+@downloadURL https://github.com/itsjoshpark/userscripts/raw/main/src/Picnob.css
+@updateURL   https://github.com/itsjoshpark/userscripts/raw/main/src/Picnob.css
+==/UserStyle== */
+
+/* Adjust gallery nav buttons */
+
+.navigation .nav-btn,
+.navigation .nav-btn.disabled {
+  border: none;
+  width: 3rem;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation .nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation .nav-btn::before,
+.navigation .nav-btn:hover::before {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.navigation .nav-btn.disabled::before {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.navigation .nav-prev {
+  border-radius: 0 0.5rem 0.5rem 0;
+  left: 0;
+}
+
+.navigation .nav-next {
+  border-radius: 0.5rem 0 0 0.5rem;
+  right: 0;
+}
