@@ -1,14 +1,8 @@
 // ==UserScript==
 // @name         Restore WOL Settings
 // @version      3
-// @encoding     utf-8
 // @match        *://wol.jw.org/*
 // @author       itsjoshpark
-// @compatible   chrome
-// @compatible   firefox
-// @compatible   opera
-// @compatible   safari
-// @compatible   edge
 // @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Restore%20WOL%20Settings.user.js
 // @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Restore%20WOL%20Settings.user.js
 // @run-at       document-start

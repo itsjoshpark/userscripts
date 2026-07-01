@@ -1,17 +1,11 @@
 // ==UserScript==
-// @name         Redirect Reddit to Redlib
+// @name         Redirect Reddit
 // @version      10
-// @encoding     utf-8
 // @match        *://*.reddit.com/*
 // @match        *://redlib.catsarch.com/*
 // @author       itsjoshpark
-// @compatible   chrome
-// @compatible   firefox
-// @compatible   opera
-// @compatible   safari
-// @compatible   edge
-// @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit%20to%20Redlib.user.js
-// @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit%20to%20Redlib.user.js
+// @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit.user.js
+// @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit.user.js
 // @run-at       document-start
 // ==/UserScript==
 
