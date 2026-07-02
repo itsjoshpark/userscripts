@@ -7,6 +7,13 @@
 @updateURL   https://github.com/itsjoshpark/userscripts/raw/main/src/Picnob.css
 ==/UserStyle== */
 
+/* Hide items */
+
+.share,
+.desney {
+  display: none;
+}
+
 /* Adjust gallery nav buttons */
 
 .navigation .nav-btn,
