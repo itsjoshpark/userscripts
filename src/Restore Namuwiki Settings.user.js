@@ -19,8 +19,7 @@ function main() {
     return;
   }
 
-  const settings = localStorage.getItem("theseed_settings");
-  if (settings) {
+  if (localStorage.getItem("theseed_settings") !== null) {
     return;
   }
   localStorage.setItem(

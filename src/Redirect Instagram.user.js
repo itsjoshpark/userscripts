@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Redirect Instagram to Picnob
+// @name         Redirect Instagram
 // @version      1
 // @match        *://*.instagram.com/*
 // @match        *://www.picnob.com/*
