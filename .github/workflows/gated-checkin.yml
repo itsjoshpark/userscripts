@@ -1,4 +1,4 @@
-name: gated-checkin
+name: Gated Check-in
 
 on:
   push:
