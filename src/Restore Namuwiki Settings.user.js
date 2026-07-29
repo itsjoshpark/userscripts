@@ -24,7 +24,7 @@ function main() {
   }
   localStorage.setItem(
     "theseed_settings",
-    '{"wiki.footnote_type":"popover","wiki.dark_mode":true,"wiki.forced_font_size":"1.3rem","wiki.disable_image_lazy":true,"discuss.strike":"hide","discuss.bold":"hide","senkawa.hide_sidebar":true,"senkawa.left_sidebar":false,"senkawa.hide_namunews_card":true}'
+    '{"wiki.footnote_type":"popover","wiki.dark_mode":true,"wiki.forced_font_size":"1.3rem","wiki.disable_image_lazy":true,"discuss.strike":"hide","discuss.bold":"hide","senkawa.hide_sidebar":true,"senkawa.left_sidebar":false,"senkawa.hide_namunews_card":true}',
   );
   window.location.reload();
 }

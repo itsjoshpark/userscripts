@@ -1,0 +1,6 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "ignorePatterns": ["**/Return YouTube Dislike.user.js"],
+  "env": { "browser": true, "es2024": true },
+  "categories": { "correctness": "error" }
+}
