@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        Picnob
-@version     2
+@version     3
 @match       *://www.picnob.com/*
 @match       *://www.pixnoy.com/*
 @author      itsjoshpark
@@ -10,6 +10,7 @@
 
 /* Hide items */
 
+.catdir,
 .share,
 .slimlay,
 .down {
