@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         Redirect Instagram
-// @version      1
+// @version      2
 // @match        *://*.instagram.com/*
+// @match        *://www.pixnoy.com/*
 // @match        *://www.picnob.com/*
 // @author       itsjoshpark
 // @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Instagram.user.js
@@ -10,7 +11,7 @@
 // ==/UserScript==
 
 function main() {
-  const domain = "www.picnob.com";
+  const domain = "www.pixnoy.com";
 
   if (window.location.hostname === "www.instagram.com") {
     const pathname = window.location.pathname;
