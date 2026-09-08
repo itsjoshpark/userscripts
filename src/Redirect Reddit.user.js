@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Redirect Reddit
-// @version      10
+// @version      11
 // @match        *://*.reddit.com/*
 // @match        *://redlib.catsarch.com/*
 // @author       itsjoshpark
@@ -21,20 +21,30 @@ function main() {
   }
 
   if (window.location.hostname === domain) {
-    if (document.cookie.split("; ").includes("use_hls=on")) {
+    // Redlib writes its preference cookies as HttpOnly, so they are invisible
+    // and unwritable from JS. Track application with our own session cookie
+    // instead, using a name Redlib's PREFS list does not contain, and let the
+    // server apply the settings.
+    if (document.cookie.split("; ").includes("defaults_applied=1")) {
       return;
     }
-    document.cookie = "theme=system; path=/";
-    document.cookie = "front_page=default; path=/";
-    document.cookie = "layout=card; path=/";
-    document.cookie = "wide=off; path=/";
-    document.cookie = "post_sort=hot; path=/";
-    document.cookie = "comment_sort=top; path=/";
-    document.cookie = "show_nsfw=off; path=/";
-    document.cookie = "use_hls=on; path=/";
-    document.cookie = "hide_hls_notification=on; path=/";
-    document.cookie = "fixed_navbar=off; path=/";
-    window.location.reload();
+    document.cookie = "defaults_applied=1; path=/";
+
+    fetch("/settings", {
+      method: "POST",
+      body: new URLSearchParams({
+        theme: "system",
+        front_page: "default",
+        layout: "card",
+        wide: "off",
+        post_sort: "hot",
+        comment_sort: "top",
+        show_nsfw: "off",
+        use_hls: "on",
+        hide_hls_notification: "on",
+        fixed_navbar: "off",
+      }),
+    }).then(() => window.location.reload());
   }
 }
 
