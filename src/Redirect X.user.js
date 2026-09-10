@@ -31,8 +31,6 @@ function main() {
     }
     document.cookie = "defaults_applied=1; path=/";
 
-    // Omitted preferences are reset: a missing checkbox reads as off and a
-    // missing text or select field reads as blank.
     fetch("/saveprefs", {
       method: "POST",
       body: new URLSearchParams({
