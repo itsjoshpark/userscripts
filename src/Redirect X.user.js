@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Redirect X
-// @version      5
+// @version      6
 // @match        *://x.com
 // @match        *://*.x.com/*
 // @match        *://nitter.cf/*
@@ -8,7 +8,11 @@
 // @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20X.user.js
 // @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20X.user.js
 // @run-at       document-start
+// @inject-into  content
 // ==/UserScript==
+
+// Nitter serves `script-src 'self'`, which blocks page-context injection in
+// Safari, so this has to run in the extension's content context instead.
 
 function main() {
   const domain = "nitter.cf";
@@ -43,7 +47,7 @@ function main() {
         mp4Playback: "on",
         autoplayGifs: "on",
         mediaView: "Gallery",
-        gallerySize: "Medium",
+        gallerySize: "Large",
         replaceTwitter: "nitter.cf",
         replaceReddit: "redlib.catsarch.com",
       }),
