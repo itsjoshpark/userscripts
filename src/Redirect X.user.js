@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Redirect X
-// @version      3
+// @version      4
 // @match        *://x.com
 // @match        *://*.x.com/*
-// @match        *://xcancel.com/*
+// @match        *://nitter.cf/*
 // @author       itsjoshpark
 // @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20X.user.js
 // @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20X.user.js
@@ -11,7 +11,7 @@
 // ==/UserScript==
 
 function main() {
-  const domain = "xcancel.com";
+  const domain = "nitter.cf";
 
   if (window.location.hostname === "x.com") {
     const pathname = window.location.pathname;
