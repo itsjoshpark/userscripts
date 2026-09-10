@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Redirect X
-// @version      4
+// @version      5
 // @match        *://x.com
 // @match        *://*.x.com/*
 // @match        *://nitter.cf/*
@@ -19,6 +19,37 @@ function main() {
       window.location.replace(`https://${domain}${pathname}`);
     }
     return;
+  }
+
+  if (window.location.hostname === domain) {
+    // Nitter writes its preference cookies as HttpOnly, so they are invisible
+    // and unwritable from JS. Track application with our own cookie instead,
+    // using a name Nitter's preference list does not contain, and let the
+    // server apply the settings.
+    if (document.cookie.split("; ").includes("defaults_applied=1")) {
+      return;
+    }
+    document.cookie = "defaults_applied=1; path=/";
+
+    // Omitted preferences are reset: a missing checkbox reads as off and a
+    // missing text or select field reads as blank.
+    fetch("/saveprefs", {
+      method: "POST",
+      body: new URLSearchParams({
+        referer: "/",
+        theme: "Auto",
+        hideBanner: "on",
+        hidePins: "on",
+        squareAvatars: "on",
+        useTwemoji: "on",
+        mp4Playback: "on",
+        autoplayGifs: "on",
+        mediaView: "Gallery",
+        gallerySize: "Medium",
+        replaceTwitter: "nitter.cf",
+        replaceReddit: "redlib.catsarch.com",
+      }),
+    }).then(() => window.location.reload());
   }
 }
 
