@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        Teapawt
+@version     1
+@match       *://nitter.cf/*
+@match       *://xitter.cf/*
+@author      itsjoshpark
+@downloadURL https://github.com/itsjoshpark/userscripts/raw/main/src/Teapawt.css
+@updateURL   https://github.com/itsjoshpark/userscripts/raw/main/src/Teapawt.css
+==/UserStyle== */
+
+/* Hide header items */
+
+a.nav-icon.sister-site,
+a.nav-icon[title="RSS Feed"] {
+  display: none;
+}
