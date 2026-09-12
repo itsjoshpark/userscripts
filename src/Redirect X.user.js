@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Redirect X
-// @version      7
+// @version      8
 // @match        *://x.com
 // @match        *://*.x.com/*
 // @match        *://nitter.cf/*
@@ -39,19 +39,20 @@ function main() {
     fetch("/saveprefs", {
       method: "POST",
       body: new URLSearchParams({
-        referer: "/",
-        theme: "Auto",
+        autoplayGifs: "on",
+        compactGallery: "on",
+        gallerySize: "Large",
         hideBanner: "on",
         hidePins: "on",
         hideTweetStats: "on",
-        squareAvatars: "on",
-        useTwemoji: "on",
-        mp4Playback: "on",
-        autoplayGifs: "on",
         mediaView: "Gallery",
-        gallerySize: "Large",
-        replaceTwitter: "nitter.cf",
+        mp4Playback: "on",
+        referer: "/",
         replaceReddit: "redlib.catsarch.com",
+        replaceTwitter: "nitter.cf",
+        squareAvatars: "on",
+        theme: "Auto",
+        useTwemoji: "on",
       }),
     }).then(() => window.location.reload());
   }
