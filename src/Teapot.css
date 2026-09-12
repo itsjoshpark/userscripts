@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        Teapot
-@version     1
+@version     2
 @match       *://nitter.cf/*
 @match       *://xitter.cf/*
 @author      itsjoshpark
@@ -12,5 +12,25 @@
 
 a.nav-icon.sister-site,
 a.nav-icon[title="RSS Feed"] {
+  display: none;
+}
+
+/* Adjust gallery */
+
+main .container {
+  padding: 80px 20px 0;
+}
+
+.timeline-container.media-only {
+  padding: 0;
+}
+
+.show-more a {
+  padding: 0;
+}
+
+/* Hide go to top */
+
+.top-ref {
   display: none;
 }
