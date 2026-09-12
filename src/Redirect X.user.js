@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         Redirect X
-// @version      6
+// @version      7
 // @match        *://x.com
 // @match        *://*.x.com/*
 // @match        *://nitter.cf/*
+// @match        *://xitter.cf/*
 // @author       itsjoshpark
 // @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20X.user.js
 // @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20X.user.js
@@ -42,6 +43,7 @@ function main() {
         theme: "Auto",
         hideBanner: "on",
         hidePins: "on",
+        hideTweetStats: "on",
         squareAvatars: "on",
         useTwemoji: "on",
         mp4Playback: "on",
