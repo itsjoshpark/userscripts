@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Redirect X
-// @version      8
+// @version      9
 // @match        *://x.com
 // @match        *://*.x.com/*
 // @match        *://nitter.cf/*
@@ -15,18 +15,18 @@
 // Nitter serves `script-src 'self'`, which blocks page-context injection in
 // Safari, so this has to run in the extension's content context instead.
 
-function main() {
-  const domain = "nitter.cf";
+const DOMAIN = "nitter.cf";
 
+function main() {
   if (window.location.hostname === "x.com") {
     const pathname = window.location.pathname;
     if (pathname) {
-      window.location.replace(`https://${domain}${pathname}`);
+      window.location.replace(`https://${DOMAIN}${pathname}`);
     }
     return;
   }
 
-  if (window.location.hostname === domain) {
+  if (window.location.hostname === DOMAIN) {
     // Nitter writes its preference cookies as HttpOnly, so they are invisible
     // and unwritable from JS. Track application with our own cookie instead,
     // using a name Nitter's preference list does not contain, and let the
