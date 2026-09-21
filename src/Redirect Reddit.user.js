@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Redirect Reddit
-// @version      11
+// @version      12
 // @match        *://*.reddit.com/*
 // @match        *://redlib.catsarch.com/*
 // @author       itsjoshpark

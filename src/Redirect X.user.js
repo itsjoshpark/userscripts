@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Redirect X
-// @version      8
+// @version      9
 // @match        *://x.com
 // @match        *://*.x.com/*
 // @match        *://nitter.cf/*
