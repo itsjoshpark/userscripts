@@ -8,6 +8,8 @@
 // @run-at       document-start
 // ==/UserScript==
 
+const DOMAIN = "www.pixnoy.com";
+
 // Instagram usernames are letters, digits, dots and underscores only.
 const USER = /^[a-z0-9._]{1,30}$/i;
 const CODE = /^[a-z0-9_-]+$/i;
@@ -127,8 +129,6 @@ function unwrapNext(pathname, search) {
 }
 
 function main() {
-  const domain = "www.pixnoy.com";
-
   if (!/(^|\.)instagram\.com$/.test(window.location.hostname)) {
     return;
   }
@@ -146,7 +146,7 @@ function main() {
   }
 
   window.stop();
-  window.location.replace(`https://${domain}${path}`);
+  window.location.replace(`https://${DOMAIN}${path}`);
 }
 
 main();
