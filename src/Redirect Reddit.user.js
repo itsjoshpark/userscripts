@@ -9,18 +9,18 @@
 // @run-at       document-start
 // ==/UserScript==
 
-function main() {
-  const domain = "redlib.catsarch.com";
+const DOMAIN = "redlib.catsarch.com";
 
+function main() {
   if (window.location.hostname === "www.reddit.com") {
     const pathname = window.location.pathname;
     if (pathname) {
-      window.location.replace(`https://${domain}${pathname}`);
+      window.location.replace(`https://${DOMAIN}${pathname}`);
     }
     return;
   }
 
-  if (window.location.hostname === domain) {
+  if (window.location.hostname === DOMAIN) {
     // Redlib writes its preference cookies as HttpOnly, so they are invisible
     // and unwritable from JS. Track application with our own session cookie
     // instead, using a name Redlib's PREFS list does not contain, and let the
