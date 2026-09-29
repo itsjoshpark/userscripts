@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         Redirect Instagram
-// @version      3
+// @version      4
 // @match        *://*.instagram.com/*
 // @author       itsjoshpark
 // @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Instagram.user.js
 // @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Instagram.user.js
 // @run-at       document-start
+// @inject-into  content
 // ==/UserScript==
 
 const DOMAIN = "www.pixnoy.com";
