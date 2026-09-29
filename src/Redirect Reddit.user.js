@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         Redirect Reddit
-// @version      12
+// @version      13
 // @match        *://*.reddit.com/*
 // @match        *://redlib.catsarch.com/*
 // @author       itsjoshpark
 // @downloadURL  https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit.user.js
 // @updateURL    https://github.com/itsjoshpark/userscripts/raw/main/src/Redirect%20Reddit.user.js
 // @run-at       document-start
+// @inject-into  content
 // ==/UserScript==
 
 const DOMAIN = "redlib.catsarch.com";
